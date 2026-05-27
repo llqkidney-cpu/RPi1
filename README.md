@@ -24,10 +24,10 @@ sudo ppstest /dev/pps0
 sudo apt install gpsd gpsd-clients
 sudo nano /etc/default/gpsd
 
-DEVICES="/dev/ttyUSBO /dev/pps0"
+DEVICES="/dev/ttyUSB0 /dev/pps0"
 GPSD_OPTIONS="-n"
 START_DAEMON="true"
-sudo systemetl restart gpsd
+sudo systemctl restart gpsd
 sudo ntpshmmon
 
 sudo apt install chrony gpsd gpsd-clients
