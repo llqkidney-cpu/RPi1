@@ -22,7 +22,7 @@ dtoverlay=pps-gpio,gpiopin=4
 sudo apt install pps-tools 
 sudo ppstest /dev/pps0
 sudo apt install gpsd gpsd-clients
-sudo nano /etc/default/gpsd:
+sudo nano /etc/default/gpsd
 
 DEVICES="/dev/ttyUSBO /dev/pps0"
 GPSD_OPTIONS="-n"
